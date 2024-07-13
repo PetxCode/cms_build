@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { AuthProvider } from "@/utils/AuthProvider";
+// import { AuthProvider } from "@/utils/AuthProvider";
 import { dbConfig } from "@/utils/dbConfig";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,10 +18,10 @@ export default async function RootLayout({
 }>) {
   await dbConfig();
   return (
-    <AuthProvider>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </AuthProvider>
+    // <AuthProvider>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+    // </AuthProvider>
   );
 }
