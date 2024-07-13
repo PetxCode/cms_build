@@ -20,8 +20,8 @@ const page = () => {
     e?.preventDefault();
 
     // setStart(() => {});
-    const confirmation = await signInWithPhoneNumber(auth, text, reCapt);
-    setComfirm(confirmation);
+    // const confirmation = await signInWithPhoneNumber(auth, text, );
+    // setComfirm(confirmation);
   };
 
   useEffect(() => {
